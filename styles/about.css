@@ -1,0 +1,78 @@
+.AboutHeading {
+  margin-bottom: 26px;
+}
+
+.heroImage {
+  background-image: url("/images/aniaskiba-mobile.jpg");
+  width: calc(100vw - 20px);
+  height: calc(100vw - 20px);
+  background-size: cover;
+  background-position: center;
+}
+
+.paddingBottom {
+  padding-bottom: 120px;
+}
+
+@media only screen and (min-width: 700px) {
+  .hero {
+    margin-top: 240px;
+  }
+
+  .heroImage {
+    background-image: url("/images/aniaskiba-tablet.jpg");
+    width: 100%;
+    height: 400px;
+  }
+
+  .textWrapper {
+    width: 556px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    position: relative; /* dzięki temu zdjęcie moze byc pozycjonowane względem "kontenera" hero */
+    display: grid; /* pozwala wycentrować elementy */
+    margin-top: unset; /* usuń margines */
+    height: 100vh; /* ustawiam wysokość kontenera */
+  }
+
+  .heroHeading {
+    height: min-content; /* dodaję taką wartość, zeby kontener się nie rozjedzał  */
+    align-self: center; /* centruje kontener wertykalnie, względem rodzica z własnością display:grid  */
+  }
+
+  .heroHeading_h1 {
+    font-size: 120px;
+    line-height: 0.8;
+  }
+
+  .heroSubtitle {
+    font-size: 18px;
+  }
+
+  .heroImage {
+    position: absolute;
+    width: 41.66%;
+    height: 100%;
+    background-image: url("/images/aniaskiba-desktop.jpg");
+    justify-self: end;
+  }
+
+  .textWrapper {
+    width: 609px;
+  }
+
+  .AboutHeading {
+    font-size: 40px;
+  }
+
+  .aboutText {
+    font-size: 24px;
+  }
+
+  .navbar {
+    justify-self: start;
+  }
+}

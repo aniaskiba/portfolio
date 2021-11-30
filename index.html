@@ -1,50 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles/styles.css">
+<link rel="stylesheet" href="/styles/global.css">
+<link rel="stylesheet" href="/styles/about.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna Skiba</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 
 <body>
-    <main class="contentWrapper"> 
-
+    <main class="contentWrapper paddingBottom"> 
+        <div class="contentInner">
         <nav class="navbar">
-            <a class="navItem" href="/index.html">About </a>
-            <a class="navItem" href="/skills.html">Skills</a>
-            <a class="navItem" href="/contact.html">Contact</a>
+            <a class="navItem active" href="/">O mnie</a>
+            <a class="navItem" href="/wiedza">Wiedza</a>
+            <a class="navItem" href="/kontakt">Kontakt</a>
+            <a class="CV" href="/assets/CV - Ania Skiba.pdf" target="_blank">CV</a>
+            <a class="EN" href="/en" >EN</a>
         </nav>
-    
-      
-    
-        <div> 
+        
+        <div class="hero"> 
             <div class="heroHeading">
                 <h1 class="heroHeading_h1"> <span class="light"> Anna </span> <br/> Skiba</h1>
-                <p>Project Manager | Scrum Master</p>
+                <p class="heroSubtitle"> Studentka Psychologii</p>
             </div>
     
-            <div>
-                <img src="/images/ania.jpeg" alt="Ania Skiba" width="100%"/>
-            </div>
-            </div>
+            <div class="heroImage"></div>
+        </div>
     
-            <div>
-                <h2>About</h2>
-                <p>Jestem młodą i energiczną studentką Psychologii. Lubię porządek i systematyczność, jestem zwolenniczką filozofii Agile. Dobrze czuję się pracując w grupie, gdzie często pełnię rolę liderki. Szybko się uczę, a zdobywanie wiedzy sprawia mi dużą przyjemność. Jestem kreatywna, nie pozwalam sobie na nudę.
-                <br><br>
-                Próbowałam swoich sił w różnych branżach, poczynając od sprzedaży bezpośredniej, przez gastronomię, aż po obsługę klienta. Lata pracy z ludźmi nauczyły mnie efektywnej komunikacji, pracy w zespole i skutecznej negocjacji. Jako członkini PSSiAP Kraków byłam liderką projektu "PsychoPraktyczne", gdzie nabyłam doświadczenie w pracy z metodologią Scrum.
-                <br><br>
-                Pomimo miłości do porządku i planowania, staram się nie traktować życia zbyt poważnie. Jestem optymistką, dla której szklanka jest zawsze do połowy pełna.</p>
-            </div>
+        <div class="textWrapper">
+            <h2 class="AboutHeading">O mnie</h2>
+            <p class="aboutText">Mój charakter to mieszanina energii i wigoru wraz ze spokojem i wysokimi ambicjami. Studiuję Psychologię i żywo się nią interesuję. Umiejętności, które nabyłam w trakcie studiów przygotowują do pracy w wielu różnych dziedzinach. Sama lubię sprawdzać się w nowych rolach, gdzie staram się wykorzystywać posiadaną wiedzę, dopasowując ją do konkretnych wyzwań. 
+            <br><br>
+            Próbowałam swoich sił w różnych branżach, poczynając od sprzedaży bezpośredniej, przez gastronomię, aż po obsługę klienta. Lata pracy z ludźmi nauczyły mnie efektywnej komunikacji, pracy w zespole i skutecznej negocjacji. Jako członkini PSSiAP Kraków byłam liderką projektu "PsychoPraktyczne".
+            <br><br>
+            Lubię porządek i systematyczność. Szybko się uczę, a zdobywanie wiedzy sprawia mi dużą przyjemność. Pomimo miłości do planowania, staram się nie traktować życia zbyt poważnie. Jestem optymistką, dla której szklanka jest zawsze do połowy pełna.        </div>
+    </div>
     </main>
 
         <footer class="footer"> 
             <p>aniaskiba.pl ✨</p>
         </footer>
 </body>
+<script src="/script.js"></script>
 </html>
